@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div id="container">
+
+<div id="myampul"><img id="ampul" src="ampul.png"></div>
+
+</div>
+
+<div id="buttons">
+
+    <button onclick="openlight()">ON</button>
+    <button onclick="closelight()">OFF</button>
+
+</div>
+
+</body>
+
+<script>
+
+function openlight() {
+
+document.getElementById("ampul").src = "ampulaydinlik2.png";
+document.body.classList.add("light");
+document.body.classList.remove("dark");
+
+}
+
+function closelight() {
+
+document.getElementById("ampul").src = "ampul.png";
+document.body.classList.add("dark");
+document.body.classList.remove("light");
+
+}
+
+</script>
+
+
+
+</html>
